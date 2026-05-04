@@ -1,0 +1,31 @@
+/* Fontes que devem ser utilizadas */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rancho&display=swap');
+
+/* Padrões e cores*/
+:root { 
+    --color-primary-water-green: #5EC5B6;
+    --color-secundary-blue: #0F66F8;
+    --color-secundary-yellow: #FAD319;
+    --color-secundary-orange: #F2863A;
+    --color-secundary-pink: #F09CB8;
+    --background-color-light: #F9F9F9;
+    --background-color-dark: #F5F5F5;
+    --text-color: #333333;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    margin: 0 auto;
+    text-shadow: #00000020 1px 1px 3px;
+    font-family: "Nunito", sans-serif;
+}
+
+p {
+    font-size: 1rem;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}

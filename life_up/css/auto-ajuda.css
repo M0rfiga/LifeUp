@@ -56,33 +56,31 @@
         margin-bottom: 10%;
     }
 
-    .container-search-nota {
+    .container-search-person {
         display: flex;
         justify-content: left;
         margin-bottom: 20px;
         gap: 5%;
-        padding: 30px;
+        padding: 8px;
         background-color: #dfdfdf;
         border-radius: 20px;
         border: #d7d7d7 solid 1px;
         box-shadow: #0000001d 0px 0px 2px;
         width: 80%;
-        height: 30%;
     }
 
-    .container-search-nota input {
+    .container-search-person input {
         border-style: none;
         outline: none;
-
         padding: 0px 0.5rem;
         background-color: #00000000;
     }
 
-    .container-search-nota input::placeholder {
+    .container-search-person input::placeholder {
         color: #404040;
     }
 
-    .container-search-nota img {
+    .container-search-person img {
         width: 8%;
         opacity:80%;
         margin: 0;
@@ -230,36 +228,4 @@
         margin: 0;
         color: #3CA999;
     }
-}
-
-.card-img-overlay {
-    background-color: #bdccf1b7;
-}
-
-.form-control {
-    background-color: #cad6f4b5;
-    border: 1px solid #4C88F8;
-}
-
-.btn {
-    border: 0px ;
-    padding: 4px 2px;
-}
-
-.form-control:focus {
-    color: #212529;
-    background-color: #cad6f4f8;
-    border-color: #86b7fe;
-    outline: 0;
-    box-shadow: 0 0 0 .25rem rgba(13, 110, 253, .25);
-}
-
-.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
-    color: var(--bs-btn-active-color);
-    background-color: var(--bs-btn-active-bg);
-    border-color: var(--bs-btn-active-border-color);
-}
-
-.calendario-dia{
-    background-color: #0f64f886;
 }

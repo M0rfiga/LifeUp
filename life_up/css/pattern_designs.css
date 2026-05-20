@@ -1,7 +1,5 @@
-/* Fontes que devem ser utilizadas */
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Rancho&display=swap');
 
-/* Padrões e cores*/
 :root { 
     --color-primary-water-green: #5EC5B6;
     --color-secundary-blue: #0F66F8;

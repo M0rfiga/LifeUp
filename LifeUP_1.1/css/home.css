@@ -11,6 +11,12 @@ body {
     font-family: 'Fredoka', sans-serif;
     color: var(--cor-texto);
     background-color: var(--fundo-pessego);
+    background-image: url("../images/img-background-signIn.png"); 
+    background-repeat: no-repeat;                     
+    background-size: cover;                           
+    background-position: center;                      
+    background-attachment: fixed;  
+    background-attachment: fixed;
     margin: 0;
     padding-bottom: 90px; 
     min-height: 100vh;
@@ -48,7 +54,7 @@ body {
 }
 
 .banner-motivacional {
-    background-color: #C3AED6;
+    background-color: #dac6ec;
     border-radius: 28px;
     padding: 1.5rem;
     display: flex;
@@ -67,12 +73,12 @@ body {
 }
 
 .mascote-img {
-    width: 100px;
-    height: auto;
+    width: 30%;
+    margin: 0;
 }
 
 .card-article {
-    background-color: #e2e2e2;
+    background-color: #f3f3f3;
     border-radius: 28px;
     padding: 1.5rem;
     margin-bottom: 2rem;
@@ -125,6 +131,8 @@ body {
 
 .recurso-card {
     border-radius: 24px;
+    width: 100px;
+    height: 100px;
     padding: 1.2rem 0.5rem;
     text-align: center;
     text-decoration: none;
@@ -132,9 +140,9 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
     transition: transform 0.2s;
     box-shadow: 0 4px 12px rgba(0,0,0,0.03);
-    height: 100%;
 }
 
 .recurso-card:hover {
@@ -224,6 +232,13 @@ body {
     transform: scale(1.08) rotate(90deg);
 }
 
+.container-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 30px;
+}
+
 @media (min-width: 768px) {
     body {
         padding-bottom: 40px; 
@@ -260,5 +275,12 @@ body {
         width: 45px;
         height: 45px;
         font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 400px) {
+    .container-cards {
+        align-items: center;
+        flex-direction: column;
     }
 }

@@ -1,19 +1,19 @@
-:root { 
-    --color-primary-water-green: #5EC5B6;
-    --color-secundary-blue: #0F66F8;
-    --color-secundary-yellow: #FAD319;
-    --color-secundary-orange: #F2863A;
-    --color-secundary-pink: #F09CB8;
-    --background-color-light: #F9F9F9;
-    --background-color-dark: #F5F5F5;
-    --text-color: #333333;
-}
+    :root { 
+        --color-primary-water-green: #5EC5B6;
+        --color-secundary-blue: #0F66F8;
+        --color-secundary-yellow: #FAD319;
+        --color-secundary-orange: #F2863A;
+        --color-secundary-pink: #F09CB8;
+        --background-color-light: #F9F9F9;
+        --background-color-dark: #F5F5F5;
+        --text-color: #333333;
+    }
 
-@media (max-width: 400px) {
-
-    body {
-        background-color: var(--background-color);
-        text-align: center;
+    .main-content {
+        display: flex;
+        justify-content: center;
+        background-color: var(--background-color-dark);
+        margin: 0;
     }
 
     /* Estilos da nav-bar */
@@ -31,7 +31,7 @@
         width: 20%;
     }
 
-    nav > a > img {
+    nav  a  img {
         width: 50%;
         margin: 0;
     }
@@ -45,6 +45,7 @@
     .container-menu h1 {
         color: var(--color-primary-water-green);
         font-size: 1.5rem;
+        text-align: center;
     }
 
     .container-menu p {
@@ -141,13 +142,15 @@
         color: var(--color-primary-water-green);
         font-size: 1.5rem;
         margin: 20px 0px;
+        text-align: center;
+
     }
 
     .container-person-cards .card-person {
         display: flex;
         flex-direction: row;
         justify-content: left;
-        width: 22rem;
+        width: 90%;
         height: 8rem;
         background-color: #d4d4d4;
         border-radius: 30px;
@@ -181,6 +184,7 @@
         margin: 0;
         margin-top: 10px;
         color: var(--text-color);
+        font-size: 1.2rem;
     }
 
     .card-person .card-info p {
@@ -228,4 +232,3 @@
         margin: 0;
         color: #3CA999;
     }
-}

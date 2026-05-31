@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crie sua conta</title>
+    
+    <link rel="stylesheet" href="css/signIn.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/css/bootstrap.min.css" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+    <div class="container-main">
+        <div class="container-content">
+            <div class="topo-acoes">
+                <a href="index.html" class="btn-voltar" aria-label="Voltar para a página anterior">
+                    <i class="bi bi-arrow-left"></i>
+                </a>
+                <img src="images/img-plant.png" alt="Ilustração de broto crescendo" class="Florescimento">
+            </div>
+
+            <h1 class="titulo-cadastro">Crie sua conta</h1>
+            <p class="subtitulo-cadastro">Vamos começar nossa jornada juntos!</p>
+
+            <form action="home.html">
+                <div class="container-enter-data">
+                    <div class="mb-3 input-style">
+                        <label class="form-label">Nome Completo</label>
+                        <input type="text" class="form-control" required>
+                    </div>
+                    <div class="mb-3 input-style">
+                        <label class="form-label">E-mail</label>
+                        <input type="email" class="form-control" required>
+                    </div>
+                    <div class="mb-3 input-style">
+                        <label class="form-label">Senha</label>
+                        <input type="password" class="form-control" required>
+                    </div>
+                    <div class="mb-4 input-style">
+                        <label class="form-label">Confirmar Senha</label>
+                        <input type="password" class="form-control" required>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-create">Criar Conta</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

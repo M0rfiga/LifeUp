@@ -1,0 +1,127 @@
+:root {
+    --roxo-principal: #7A22E1;
+    --cor-texto: #4A148C;
+    --fundo-topo: #D6C2F9; 
+    --fundo-baixo: #FCE4EC; 
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    color: var(--cor-texto);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/img-background-index.png"); 
+    background-repeat: no-repeat;                     
+    background-size: cover;                           
+    background-position: center;                      
+    background-attachment: fixed;  
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-main {
+    width: 100%;
+    max-width: 100%;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+.container-content {
+    text-align: center;
+    background-color: transparent;
+    border-radius: 0;
+    padding: 10px;
+    box-shadow: none;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+}
+
+p {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 5vh;
+}
+
+a {
+    width: 100%;
+    margin-top: 1rem;
+    background-color: none;
+}
+
+.top-illustration {
+    width: 100%;
+    max-width: 260px;
+    height: auto;
+
+    margin: 0;
+}
+
+.btn-login {
+    background-color: var(--roxo-principal);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    padding: 0.8rem 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 80%;
+    transition: 0.2s ease;
+    margin-top: 1rem;
+    box-shadow: 0 8px 16px rgba(122, 34, 225, 0.4);
+}
+
+.btn-login:hover {
+    background-color: #611bbb;
+    color: white;
+}
+
+.btn-signIn {
+    background-color: #ffffff;
+    color: var(--cor-texto);
+    border: none;
+    border-radius: 15px;
+    padding: 0.8rem 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 80%;
+    transition: background-color 0.2s ease;
+    margin-top: 1rem;
+    box-shadow: 0 8px 16px rgba(122, 34, 225, 0.4);
+    border: 1px solid rgba(0, 0, 0, 0.178)
+}
+
+.btn-signIn:hover {
+    background-color: #ebebeb;
+}
+
+
+a {
+    margin: 0;
+}
+
+@media (min-width: 768px) {
+    .container-main {
+        max-width: 1200px;
+        padding: 40px;
+    }
+
+    .container-content {
+        background-color: #ffffff; 
+        border-radius: 30px;
+        padding: 3.5rem;
+        box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+    }
+}

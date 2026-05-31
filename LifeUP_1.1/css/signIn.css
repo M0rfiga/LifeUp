@@ -1,0 +1,155 @@
+:root {
+    --roxo-principal: #5A00C0;
+    --cor-texto: #2D144A;
+    --fundo-topo: #FCD9D2; 
+    --fundo-baixo: #A7E095; 
+}
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    color: var(--cor-texto);
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-image: url("../images/img-background-signIn.png"); 
+    background-repeat: no-repeat;                     
+    background-size: cover;                           
+    background-position: center;                      
+    background-attachment: fixed;  
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-main {
+    width: 100%;
+    max-width: 100%;
+    padding: 15px;
+}
+
+.container-content {
+    background-color: transparent; 
+    border-radius: 0;
+    padding: 10px;
+    box-shadow: none;
+    width: 100%;
+    max-width: 420px; 
+    margin: 0 auto;
+    position: relative;
+}
+
+.topo-acoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.btn-voltar {
+    color: #000000;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.2s;
+}
+
+.btn-voltar:hover {
+    transform: scale(1.1);
+    color: var(--roxo-principal);
+}
+
+.plantinha-img {
+    width: 75px;
+    height: auto;
+}
+
+.titulo-cadastro {
+    font-size: 1.85rem;
+    font-weight: 500;
+    margin-bottom: 0.2rem;
+    color: #1A1A1A;
+}
+
+.subtitulo-cadastro {
+    font-size: 1.05rem;
+    color: #4A4A4A;
+    margin-bottom: 2.5rem;
+}
+
+.form-label {
+    font-weight: 400;
+    margin-bottom: 0.4rem;
+    font-size: 1.05rem;
+    color: #2D2D2D;
+}
+
+.form-control {
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.164);
+    border-radius: 10px;
+    padding: 0.75rem 1.2rem;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+}
+
+
+.form-control:focus {
+    box-shadow: 0 4px 12px rgba(90, 0, 192, 0.2);
+    outline: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container-enter-data {
+    width: 80%;
+}
+
+.input-style {
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-create {
+    background-color: var(--roxo-principal);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.9rem 0;
+    font-size: 1.35rem;
+    font-weight: 500;
+    width: 60%;
+    margin: 1.5rem auto;
+    box-shadow: 0 6px 20px rgba(90, 0, 192, 0.35);
+    transition: 0.2s, transform 0.1s;
+}
+
+.btn-criar:hover {
+    background-color: #450094;
+    color: white;
+}
+
+.btn-criar:active {
+    transform: scale(0.98);
+}
+
+@media (min-width: 768px) {
+    .container-main {
+        max-width: 1200px;
+        padding: 50px 20px;
+    }
+
+    .container-content {
+        background-color: #ffffff;
+        border-radius: 35px;
+        padding: 3.5rem;
+        box-shadow: 0 20px 45px rgba(0, 0, 0, 0.08);
+        max-width: 520px; 
+    }
+}

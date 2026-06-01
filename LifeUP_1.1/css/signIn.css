@@ -64,14 +64,14 @@ body {
     height: auto;
 }
 
-.titulo-cadastro {
+.title-register {
     font-size: 1.85rem;
     font-weight: 500;
     margin-bottom: 0.2rem;
     color: #1A1A1A;
 }
 
-.subtitulo-cadastro {
+.subtitle-register {
     font-size: 1.05rem;
     color: #4A4A4A;
     margin-bottom: 2.5rem;

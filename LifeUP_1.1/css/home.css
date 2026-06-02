@@ -3,8 +3,7 @@
     --cor-texto: #2D144A;
     --fundo-pessego: #FCE5DC;
     --bg-diario: #EEF2FF;
-    --bg-conversar: #FFF0F5;
-    --bg-apoio: #E8F5E9;
+    --bg-emergency: #ff8a8a;
 }
 
 body {
@@ -174,7 +173,7 @@ body {
 }
 
 .bg-i-diario { background-color: #C7D2FE; color: #4338CA; }
-.bg-i-conversar { background-color: #FBCFE8; color: #DB2777; }
+.bg-i-emergency { background-color: #d83a3a; color: #ffffff; }
 .bg-i-apoio { background-color: #A7F3D0; color: #059669; }
 
 .bottom-nav {

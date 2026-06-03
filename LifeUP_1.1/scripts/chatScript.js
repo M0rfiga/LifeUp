@@ -1,41 +1,100 @@
-function sendMessage() {
-    const message = document.getElementById('message-input');
+const ApiGemini = "AQ.Ab8RN6KrWA2FmwumuceXAbC7UHwJHGXK7gIsmWvFKehkavHYgQ";
 
-    if (!message.value.trim()) {
-        message.style.border = '1px solid red';
-        return;
+function sendMessage() {
+    const inputMessage = document.getElementById('message-input');
+    const status = document.getElementById('status');
+    const btnSubmit = document.getElementById('btn-submit');
+    const textMessage = inputMessage.value;
+
+    if (textMessage === " ") {
+        inputMessage.style.border = '1px solid red';
+        return; 
     }
 
-    message.style.border = 'none';
+    inputMessage.style.border = 'none';
+    status.style.display = 'block';
+    status.innerHTML = 'Digitando...';
+    btnSubmit.disabled = true;
+    inputMessage.disabled = true;
 
-    const textoMensagem = message.value;
+    const dataToPush = {
+        contents: [{
+            parts: [{text: textMessage}]
+        }]
+    };
 
-    const now = new Date();
-    const hour = String(now.getHours()).padStart(2, '0');
-    const minutes = String(now.getMinutes()).padStart(2, '0');
-    const hourFormat = `${hour}:${minutes}`;
+    const url = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent?key=" + ApiGemini;
 
-    showHistory(textoMensagem, hourFormat);
+    fetch(url, {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(dataToPush)
+    })
 
-    message.value = '';
+    .then(function(returnApi) {
+        if (returnApi.ok === false) throw new Error("Erro na API");
+
+        return returnApi.json();
+    })
+
+    .then(function(dataConvert) {
+        const textMessageBot = dataConvert.candidates[0].content.parts[0].text;
+
+        status.style.display = 'none';
+        inputMessage.value = ''; 
+        btnSubmit.disabled = false;
+        inputMessage.disabled = false;
+
+        showHistory(textMessage, textMessageBot);
+        status.innerHTML = 'Online';
+        status.style.display = 'block';
+        inputMessage.style.border = '1px solid #000';
+
+    })
+
+    .catch(function(error) {
+        alert("Falha na conexão")
+        btnSubmit.disabled = false;
+        inputMessage.disabled = false;
+        status.innerHTML = 'Online';
+        inputMessage.style.border = '1px solid #000';
+    });
 }
 
-function showHistory(message, time) {
-    const historyBox = document.getElementById('history');
-    const boxMyMessage = document.createElement('div');
-    const myMessage = document.createElement('p');
-    const timeSpan = document.createElement('span');
+function showHistory(userMessage, botMessage) {
+    const history = document.getElementById('history');
+    const userTime = getCurrentTime();
+    const divUser = document.createElement('div');
+    const divBot = document.createElement('div'); 
 
-    boxMyMessage.className = 'box-my-message';
-    myMessage.className = 'my-message';
-    timeSpan.className = 'message-time';
+    divUser.className = 'box-my-message';
+    divUser.innerHTML = `
+        <p class="my-message" style="height: 10rem;"> 
+            ${userMessage} 
+            <span class="message-time"> 
+                ${userTime} 
+            </span>
+        </p>`;
 
-    myMessage.textContent = message;
-    timeSpan.textContent = time;
+    history.appendChild(divUser);
 
-    myMessage.appendChild(timeSpan);
-    boxMyMessage.appendChild(myMessage);
-    historyBox.appendChild(boxMyMessage);
+    divBot.className = 'box-response-message'; 
+    divBot.innerHTML = `
+        <p class="response-message">
+            ${botMessage}  
+        </p>`;
 
-    historyBox.scrollTop = historyBox.scrollHeight;
+    history.appendChild(divBot);
+
+    history.scrollTop = history.scrollHeight;
+}
+
+function getCurrentTime() {
+    const now = new Date();
+    const hours = String(now.getHours()).padStart(2, '0');
+    const minutes = String(now.getMinutes()).padStart(2, '0');
+
+    return hours + ":" + minutes;
 }

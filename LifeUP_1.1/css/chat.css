@@ -82,14 +82,10 @@ body{
 .my-message{
     background: var(--user);
     color: white;
-
     max-width: 75%;
-
     padding: 12px 16px;
     border-radius: 18px 18px 5px 18px;
-
     position: relative;
-
     box-shadow: 0 3px 8px rgba(0,0,0,.1);
 }
 

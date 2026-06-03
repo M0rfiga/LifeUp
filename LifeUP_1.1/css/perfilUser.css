@@ -87,6 +87,10 @@ body {
     align-items: center;
 }
 
+.card-article p{
+    color:#7A22E1;
+}
+
 .badge-article {
     background-color: #E8DBFA;
     color: var(--roxo-principal);
@@ -283,4 +287,22 @@ body {
         align-items: center;
         flex-direction: column;
     }
+}
+
+.cabecalho-usuario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #dac6ec;
+    flex-direction: column;
+    padding: 1.5rem;
+    
+    width: auto;
+}
+
+.editar{
+    text-align: right;
+    background-color: #dac6ec;
+    flex-direction: column;
+    margin-bottom: 2rem;
 }

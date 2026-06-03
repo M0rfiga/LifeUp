@@ -305,21 +305,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #dac6ec;
     flex-direction: column;
     padding: 1.5rem;
     width: auto;
-    border-top-left-radius: 35px;
-    border-top-right-radius: 35px;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
     margin: auto;
 }
 
 .editar{
     text-align: right;
-    background-color: #dac6ec;
     flex-direction: column;
     margin-bottom: 2rem;
-    border-bottom-left-radius: 35px;
-    border-bottom-right-radius: 35px;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
     margin: auto;
 }

@@ -293,6 +293,8 @@ body {
     border: solid 1px #7A22E1;
     border-radius: 8px;
     margin: 0.1%;
+    display:flex;
+    flex-wrap:wrap;
 }
 
 .bordinha td{

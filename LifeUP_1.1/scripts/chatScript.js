@@ -1,4 +1,4 @@
-const ApiGemini = "AQ.Ab8RN6KrWA2FmwumuceXAbC7UHwJHGXK7gIsmWvFKehkavHYgQ";
+const ApiGemini = "AQ.Ab8RN6KgbvXPdVFH7tDT5m-nnz1o-0LdImTU8bdcz6PhjlRRVA";
 
 function sendMessage() {
     const inputMessage = document.getElementById('message-input');
@@ -6,7 +6,7 @@ function sendMessage() {
     const btnSubmit = document.getElementById('btn-submit');
     const textMessage = inputMessage.value;
 
-    if (textMessage === " ") {
+    if (textMessage === "") {
         inputMessage.style.border = '1px solid red';
         return; 
     }
@@ -14,6 +14,7 @@ function sendMessage() {
     inputMessage.style.border = 'none';
     status.style.display = 'block';
     status.innerHTML = 'Digitando...';
+    status.style.color = '#ffffff';
     btnSubmit.disabled = true;
     inputMessage.disabled = true;
 
@@ -49,6 +50,7 @@ function sendMessage() {
 
         showHistory(textMessage, textMessageBot);
         status.innerHTML = 'Online';
+        status.style.color = '#2ee73d';
         status.style.display = 'block';
         inputMessage.style.border = '1px solid #000';
 
@@ -71,20 +73,23 @@ function showHistory(userMessage, botMessage) {
 
     divUser.className = 'box-my-message';
     divUser.innerHTML = `
-        <p class="my-message" style="height: 10rem;"> 
-            ${userMessage} 
-            <span class="message-time"> 
+        <div class="my-message""> 
+            <p>${userMessage}</p> 
+            <p class="message-time"> 
                 ${userTime} 
-            </span>
-        </p>`;
+            </p>
+        </div>`;
 
     history.appendChild(divUser);
 
     divBot.className = 'box-response-message'; 
+    let messageConvertMark = marked.parse(botMessage);
     divBot.innerHTML = `
-        <p class="response-message">
-            ${botMessage}  
-        </p>`;
+        <div class="response-message">
+            <p>
+                ${messageConvertMark}
+            </p>  
+        </div>`;
 
     history.appendChild(divBot);
 

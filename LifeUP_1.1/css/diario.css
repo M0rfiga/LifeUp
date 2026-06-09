@@ -16,7 +16,6 @@ body {
     background-size: cover;                           
     background-position: center;                      
     background-attachment: fixed;  
-    background-attachment: fixed;
     margin: 0;
     padding-bottom: 90px; 
     min-height: 100vh;
@@ -58,6 +57,7 @@ body {
     border-radius: 28px;
     padding: 1.5rem;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 1.5rem;
@@ -295,10 +295,16 @@ body {
     margin: 0.1%;
     display:flex;
     flex-wrap:wrap;
+    flex-direction: column;
+    background-color: #ffffff;
 }
 
 .bordinha td{
     text-align: center;
-    border: 0.1rem solid black ;
     border-radius: 15%;
+}
+
+.form-control:focus {
+    border-color: #7A22E1 !important;
+    box-shadow: 0 0 0 .25rem #7b22e14d !important;
 }

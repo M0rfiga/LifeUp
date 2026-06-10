@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background:#2f2f2f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-family:'Delius', cursive;
+}
+
+.container{
+    width:340px;
+    height:740px;
+    background:#f6ded6;
+    position:relative;
+    overflow:hidden;
+}
+
+.topo{
+    display:flex;
+    align-items:center;
+    padding:24px 22px 0;
+}
+
+.voltar{
+    font-size:28px;
+    color:#000;
+    margin-right:58px;
+}
+
+.topo h1{
+    font-size:27px;
+    font-weight:400;
+    color:#111;
+}
+
+.abas{
+    width:288px;
+    height:49px;
+    background:#d7b0f5;
+    border-radius:14px;
+    margin:58px auto 28px;
+    display:flex;
+    overflow:hidden;
+}
+
+.abas button{
+    flex:1;
+    border:none;
+    background:transparent;
+    font-family:'Delius', cursive;
+    font-size:22px;
+    color:#7600ff;
+    cursor:pointer;
+}
+
+.abas .ativo{
+    background:#8500ff;
+    color:white;
+    border-radius:14px;
+}
+
+.card{
+    width:282px;
+    height:165px;
+    background:#d8d8d8;
+    border-radius:25px;
+    margin:0 auto 28px;
+    display:flex;
+    align-items:center;
+    padding:22px 26px;
+    box-shadow:0 4px 4px rgba(0,0,0,0.22);
+}
+
+.icone-calendario{
+    width:82px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.icone-calendario i{
+    font-size:58px;
+    color:#6200c8;
+}
+
+.info{
+    flex:1;
+    padding-left:15px;
+}
+
+.info h2{
+    font-size:22px;
+    color:#111;
+    margin-bottom:7px;
+    white-space:nowrap;
+}
+
+.info p{
+    font-size:16px;
+    color:#111;
+    margin-bottom:6px;
+    white-space:nowrap;
+}
+
+.status{
+    display:block;
+    width:115px;
+    height:26px;
+    background:#8ed481;
+    color:#1f8a2d;
+    border-radius:20px;
+    text-align:center;
+    line-height:26px;
+    font-size:13px;
+    margin:8px auto 0;
+    font-family:'Poppins', sans-serif;
+}
+
+.novo{
+    width:276px;
+    height:65px;
+    background:#6d00d9;
+    color:white;
+    border:none;
+    border-radius:17px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:6px;
+    margin:20px auto 0;
+    font-family:'Delius', cursive;
+    font-size:22px;
+    box-shadow:0 5px 5px rgba(0,0,0,.25);
+    cursor:pointer;
+}
+
+.novo i{
+    font-size:30px;
+}
+
+.menu{
+    width:100%;
+    height:72px;
+    background:#ffffff;
+    position:absolute;
+    bottom:0;
+    left:0;
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+    padding:0 8px;
+
+    box-shadow:0 -2px 10px rgba(0,0,0,0.08);
+}
+
+.item{
+    width:45px;
+    text-align:center;
+    font-family:'Poppins', sans-serif;
+
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+}
+
+.item i{
+    font-size:20px;
+    color:#4d405f;
+}
+
+.item p{
+    font-size:10px;
+    margin-top:3px;
+    color:#4d405f;
+}
+
+.ativo-menu i,
+.ativo-menu p{
+    color:#7600ff;
+    font-weight:600;
+}
+
+.botao-centro{
+    width:52px;
+    height:52px;
+
+    border-radius:50%;
+
+    background:linear-gradient(180deg,#b27cff,#7600ff);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+    top:-6px;
+
+    box-shadow:0 4px 10px rgba(118,0,255,0.35);
+}
+
+.botao-centro i{
+    color:white;
+    font-size:34px;
+    line-height:1;
+}

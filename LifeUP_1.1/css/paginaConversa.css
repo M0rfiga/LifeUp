@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius&family=Poppins:wght@300;400;500;600&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    min-height:100vh;
+    background:#2f2f2f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.container{
+    width:340px;
+    height:740px;
+    background:#f6ded6;
+    position:relative;
+    overflow:hidden;
+}
+
+.titulo{
+    font-family:'Delius', cursive;
+    color:#6b00d8;
+    font-size:30px;
+    margin:25px 0 0 20px;
+}
+
+.topo-busca{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap:12px;
+    margin-top:25px;
+}
+
+.busca{
+    width:240px;
+    height:54px;
+    background:#eeeeee;
+    border-radius:30px;
+
+    display:flex;
+    align-items:center;
+    padding:0 18px;
+}
+
+.busca i{
+    font-size:22px;
+    color:#8c8c8c;
+}
+
+.busca input{
+    border:none;
+    background:transparent;
+    outline:none;
+    margin-left:12px;
+    width:100%;
+    font-size:18px;
+    font-family:'Delius', cursive;
+}
+
+.qr{
+    width:46px;
+    height:46px;
+    background:#eeeeee;
+    border-radius:50%;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.qr i{
+    font-size:24px;
+    color:#777;
+}
+
+.lista{
+    margin-top:35px;
+    background:#efefef;
+    height:520px;
+    padding-top:10px;
+}
+
+.conversa{
+    display:flex;
+    align-items:center;
+    padding:14px 14px;
+    position:relative;
+}
+
+.conversa img{
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    object-fit:cover;
+}
+
+.grupo{
+    width:58px;
+    height:58px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.grupo i{
+    font-size:55px;
+    color:#6b00d8;
+}
+
+.texto{
+    margin-left:12px;
+}
+
+.texto h2{
+    font-family:'Delius', cursive;
+    font-size:18px;
+    color:#111;
+    margin-bottom:6px;
+}
+
+.texto p{
+    font-family:'Poppins', sans-serif;
+    font-size:13px;
+    color:#9b9b9b;
+}
+
+.hora{
+    position:absolute;
+    right:15px;
+    top:18px;
+
+    font-family:'Poppins', sans-serif;
+    color:#777;
+    font-size:14px;
+}
+
+.novo-chat{
+    width:54px;
+    height:54px;
+    border-radius:50%;
+    background:#6b00d8;
+
+    position:absolute;
+    right:25px;
+    bottom:95px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    box-shadow:0 4px 10px rgba(0,0,0,.25);
+}
+
+.novo-chat i{
+    color:white;
+    font-size:34px;
+}
+
+.menu{
+    width:100%;
+    height:72px;
+    background:white;
+
+    position:absolute;
+    bottom:0;
+    left:0;
+
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+
+    box-shadow:0 -2px 10px rgba(0,0,0,.08);
+}
+
+.item{
+    width:45px;
+    text-align:center;
+    font-family:'Poppins', sans-serif;
+}
+
+.item i{
+    font-size:20px;
+    color:#4d405f;
+}
+
+.item p{
+    font-size:10px;
+    color:#4d405f;
+}
+
+.ativo-menu i,
+.ativo-menu p{
+    color:#7600ff;
+    font-weight:600;
+}
+
+.botao-centro{
+    width:52px;
+    height:52px;
+    border-radius:50%;
+
+    background:linear-gradient(180deg,#b27cff,#7600ff);
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    position:relative;
+    top:-6px;
+}
+
+.botao-centro i{
+    color:white;
+    font-size:34px;
+}

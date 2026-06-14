@@ -14,7 +14,7 @@ body {
     background-image: url("../images/img-background-signIn.png"); 
     background-repeat: no-repeat;                     
     background-size: cover;                           
-    background-position: center;                      
+    background-position: center;                       
     background-attachment: fixed;
     margin: 0;
     padding-bottom: 90px; 
@@ -30,9 +30,9 @@ body {
 .container-content {
     background-color: transparent;
     border-radius: 0;
-    padding: 1%;
+    padding: 10px;
     box-shadow: none;
-    width: 100%;
+    width: auto;
     max-width: 450px;
     margin: 0 auto;
 }
@@ -86,6 +86,10 @@ body {
     align-items: center;
 }
 
+.card-article p{
+    color:#7A22E1;
+}
+
 .badge-article {
     background-color: #E8DBFA;
     color: var(--roxo-principal);
@@ -123,10 +127,9 @@ body {
 }
 
 .article-img {
-    width: 100%;
+    width: 30%;
     height: auto;
     margin-left: 10px;
-    max-width: 280px;
 }
 
 .recurso-card {
@@ -252,10 +255,22 @@ body {
 
     .container-content {
         background-color: #ffffff;
-        border-radius: 35px;
+        border-bottom-left-radius: 35px;
+        border-bottom-right-radius: 35px;
         padding: 3rem;
         box-shadow: 0 20px 50px rgba(0,0,0,0.06);
         max-width: 700px;
+        margin: auto;
+    }
+
+    .container-content-cabecalho {
+        background-color: #dac6ec;
+        border-top-left-radius: 35px;
+        border-top-right-radius: 35px;
+        padding: 3rem;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+        max-width: 700px;
+        margin: auto;
     }
 
     .bottom-nav {
@@ -283,4 +298,67 @@ body {
         align-items: center;
         flex-direction: column;
     }
+}
+
+.cabecalho-usuario{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    width: auto;
+    border-bottom-left-radius: 35px;
+    border-bottom-right-radius: 35px;
+    margin: auto;
+}
+
+.editar{
+    text-align: right;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    border-top-left-radius: 35px;
+    border-top-right-radius: 35px;
+    margin: auto;
+}
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
+}
+
+.form-control {
+    border: none;
+    border-radius: 15px;
+    padding: 0.75rem 1.2rem;
+    width: 80%;
+    font-size: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.btn-editar {
+    background-color: var(--roxo-principal);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.8rem 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 100%;
+    transition: background-color 0.2s ease;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    box-shadow: 0 8px 16px rgba(122, 34, 225, 0.4);
+}
+
+.btn-editar:hover {
+    background-color: #611bbb;
+    color: white;
+}
+
+.w-100 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }

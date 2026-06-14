@@ -85,10 +85,10 @@ body {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.04);
     display: flex;
     align-items: center;
+    flex-direction: column;
 }
 
 .badge-article {
-    background-color: #E8DBFA;
     color: var(--roxo-principal);
     font-size: 0.75rem;
     font-weight: 600;

@@ -125,3 +125,16 @@ body {
         box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
     }
 }
+
+.btn-voltar {
+    color: #000000;
+    font-size: 1.5rem;
+    text-decoration: none;
+    transition: transform 0.2s;
+    align-self: flex-start;
+}
+
+.btn-voltar:hover {
+    transform: scale(1.1);
+    color: var(--roxo-principal);
+}

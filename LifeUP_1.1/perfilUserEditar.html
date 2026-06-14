@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Perfil Usuario</title>
     
-    <link rel="stylesheet" href="css/perfilUser.css">
+    <link rel="stylesheet" href="css/perfilUserEditar.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
@@ -13,11 +13,7 @@
 <body>
 
     <div class="container-main">
-        <div class="container-content-cabecalho">
-            <div class="editar">
-                <a href="perfilUserEditar.html"><i class="bi bi-pencil-square cabecalho-icon"></i>
-                </a>
-            </div>   
+        <div class="container-content-cabecalho"> 
             <div class="cabecalho-usuario">
                 <img src="/LifeUP_1.1/images/img-user.png" alt="Foto de Perfil">
                 <h1 class="saudacao-titulo">Usuário</h1>
@@ -25,16 +21,23 @@
         </div>  
 
         <div class="container-content">
+            <form action="perfilUser.html">
             <div class="card-article">
                 <div class="w-100">
                     <h2 class="article-titulo">Nome</h2>
-                    <p class="article-previa">Usuário</p>
+                    <div class="mb-1">
+                        <label for="nome" class="form-label"></label>
+                        <input type="text" class="form-control" placeholder="Usuário">
+                    </div>
                 </div>
             </div>
             <div class="card-article">
                 <div class="w-100">
                     <h2 class="article-titulo">E-MAIL</h2>
-                    <p class="article-previa">usuario@email.com</p>
+                    <div class="mb-2">
+                        <label for="email" class="form-label"></label>
+                        <input type="email" class="form-control" id="email" placeholder="Insira seu e-mail" required>
+                    </div>
                 </div>
             </div>
             <div class="card-article">
@@ -46,11 +49,14 @@
             <div class="card-article">
                 <div class="w-100">
                     <h2 class="article-titulo">NÚMERO DE TELEFONE</h2>
-                    <p class="article-previa">+55 (34)9 9999-9999</p>
+                    <div class="mb-3">
+                        <label for="telefone" class="form-label"></label>
+                        <input type="tel" class="form-control" placeholder="+55 (34)9 9999-9999">
+                    </div>
                 </div>
             </div>
-       
-
+            <button type="submit" class="btn btn-editar">Editar</button>
+            </form>
             <nav class="bottom-nav">
                 <a href="home.html" class="nav-item-custom">
                     <i class="bi bi-house-door-fill"></i>
@@ -68,7 +74,7 @@
                     <i class="bi bi-people"></i>
                     <span>Apoio</span>
                 </a>
-                <a href="#" class="nav-item-custom active">
+                <a href="perfilUser.html" class="nav-item-custom active">
                     <i class="bi bi-person-circle"></i>
                     <span>Perfil</span>
                 </a>

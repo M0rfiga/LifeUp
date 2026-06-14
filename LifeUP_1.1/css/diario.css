@@ -22,15 +22,15 @@ body {
 }
 
 .container-main {
-    width: 100%;
+    width: auto;
     max-width: 100%;
-    padding: 15px;
+    padding: 20px;
 }
 
 .container-content {
     background-color: transparent;
     border-radius: 0;
-    padding: 10px;
+    padding: 1%;
     box-shadow: none;
     width: 100%;
     max-width: 450px;

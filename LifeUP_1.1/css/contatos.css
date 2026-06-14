@@ -15,7 +15,6 @@ body {
     background-repeat: no-repeat;                     
     background-size: cover;                           
     background-position: center;                      
-    background-attachment: fixed;  
     background-attachment: fixed;
     margin: 0;
     padding-bottom: 90px; 
@@ -23,7 +22,7 @@ body {
 }
 
 .container-main {
-    width: 100%;
+    width: auto;
     max-width: 100%;
     padding: 15px;
 }
@@ -31,7 +30,7 @@ body {
 .container-content {
     background-color: transparent;
     border-radius: 0;
-    padding: 10px;
+    padding: 1%;
     box-shadow: none;
     width: 100%;
     max-width: 450px;
@@ -124,7 +123,7 @@ body {
 }
 
 .article-img {
-    width: 30%;
+    width: 100%;
     height: auto;
     margin-left: 10px;
 }

@@ -21,15 +21,15 @@ body {
 }
 
 .container-main {
-    width: 100%;
+    width: auto;
     max-width: 100%;
-    padding: 15px;
+    padding: 5%;
 }
 
 .container-content {
     background-color: transparent;
     border-radius: 0;
-    padding: 10px;
+    padding: 1%;
     box-shadow: none;
     width: 100%;
     max-width: 450px;
@@ -60,6 +60,7 @@ body {
     justify-content: space-between;
     margin-bottom: 1.5rem;
     box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    width: auto;
 }
 
 .banner-texto {

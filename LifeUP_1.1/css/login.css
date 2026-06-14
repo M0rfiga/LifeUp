@@ -9,13 +9,12 @@ body {
     font-family: 'Fredoka', sans-serif;
     color: var(--cor-texto);
     min-height: 100vh;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     background-image: url("../images/img-login-background.png"); 
     background-repeat: no-repeat;                     
     background-size: cover;                           
-    background-position: center;                      
-    background-attachment: fixed;  
+    background-position: center;                       
     background-attachment: fixed;
     display: flex;
     align-items: center;
@@ -25,7 +24,7 @@ body {
 .container-main {
     width: 100%;
     max-width: 100%;
-    padding: 20px;
+    padding: 5%;
     transition: all 0.3s ease;
 }
 
@@ -33,7 +32,7 @@ body {
     background-color: transparent;
   
     border-radius: 0;
-    padding: 10px;
+    padding: 1%;
     box-shadow: none;
     width: 100%;
     max-width: 400px;
@@ -68,7 +67,7 @@ body {
     border: none;
     border-radius: 15px;
     padding: 0.75rem 1.2rem;
-    width: 100%;
+    width: auto;
     margin-bottom: 1.5rem;
     font-size: 1rem;
     background-color: #ffffff;

@@ -14,8 +14,7 @@ body {
     background-image: url("../images/img-background-signIn.png"); 
     background-repeat: no-repeat;                     
     background-size: cover;                           
-    background-position: center;                      
-    background-attachment: fixed;  
+    background-position: center;                       
     background-attachment: fixed;
     margin: 0;
     padding-bottom: 90px; 
@@ -23,7 +22,7 @@ body {
 }
 
 .container-main {
-    width: 100%;
+    width: auto;
     max-width: 100%;
     padding: 15px;
 }

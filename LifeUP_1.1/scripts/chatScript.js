@@ -1,4 +1,4 @@
-const ApiGemini = "AQ.Ab8RN6KgbvXPdVFH7tDT5m-nnz1o-0LdImTU8bdcz6PhjlRRVA";
+const ApiGemini = "AQ.Ab8RN6JaiqSQ9WcKKI84YLOTcljpTkdkMHQ3EUwIqB3RzZLxOw";
 
 function sendMessage() {
     const inputMessage = document.getElementById('message-input');
@@ -35,11 +35,10 @@ function sendMessage() {
     })
 
     .then(function(returnApi) {
-        if (returnApi.ok === false) throw new Error("Erro na API");
+        if (returnApi.ok == false) throw new Error("Erro na API");
 
         return returnApi.json();
     })
-
     .then(function(dataConvert) {
         const textMessageBot = dataConvert.candidates[0].content.parts[0].text;
 

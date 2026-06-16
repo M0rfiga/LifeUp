@@ -308,3 +308,18 @@ body {
     border-color: #7A22E1 !important;
     box-shadow: 0 0 0 .25rem #7b22e14d !important;
 }
+
+.btn:hover {
+    background-color: rgba(0, 0, 0, 0.733) !important;
+    cursor: pointer;
+}
+
+td:hover {
+    background-color: rgba(0, 0, 0, 0.418) !important;
+    cursor: pointer;
+}
+
+.btn-selecionado {
+    border: 3px solid rgba(0, 0, 0, 0.733) !important;
+    border-radius: 10px;
+}

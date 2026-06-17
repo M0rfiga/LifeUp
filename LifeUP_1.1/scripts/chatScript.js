@@ -1,4 +1,4 @@
-const ApiGemini = "AQ.Ab8RN6JaiqSQ9WcKKI84YLOTcljpTkdkMHQ3EUwIqB3RzZLxOw";
+const ApiGemini = "AQ.Ab8RN6KoUBXxVwQuX90-PilMGZvK36Wqsh-NO2PQX2cPrf5g1g";
 
 function sendMessage() {
     const inputMessage = document.getElementById('message-input');

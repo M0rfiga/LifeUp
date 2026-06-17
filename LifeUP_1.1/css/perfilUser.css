@@ -114,6 +114,7 @@ body {
     color: #7D7387;
     line-height: 1.4;
     margin-bottom: 0.8rem;
+    padding-left: 1.2rem;
 }
 
 .article-link {
@@ -320,3 +321,67 @@ body {
     border-top-right-radius: 35px;
     margin: auto;
 }
+
+.form-label {
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
+}
+
+.form-control {
+    border: none;
+    border-radius: 15px;
+    padding: 0.75rem 1.2rem;
+    width: 80%;
+    font-size: 1rem;
+    color: #7A22E1;
+}
+
+.w-100 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.editar-label {
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    font-size: 1.1rem;
+}
+
+.form-control-editar {
+    border: none;
+    border-radius: 15px;
+    padding: 0.75rem 1.2rem;
+    width: 80%;
+    font-size: 1rem;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.btn-editar {
+    background-color: var(--roxo-principal);
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 0.8rem 0;
+    font-size: 1.3rem;
+    font-weight: 500;
+    width: 100%;
+    transition: background-color 0.2s ease;
+    margin-bottom: 2rem;
+    box-shadow: 0 8px 16px rgba(122, 34, 225, 0.4);
+}
+
+.btn-editar:hover {
+    background-color: #611bbb;
+    color: white;
+}
+
+.botaoEditar {
+    background: none;
+    border: none;
+    cursor: pointer;
+    align-self: flex-end;
+}
+
